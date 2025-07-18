@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saloni Bharat Patil | Data Analyst Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #00bfff;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #1a1a1a, #444);
+      color: white;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      line-height: 1.8;
+    }
+
+    .about-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .projects, .dashboards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #1e1e1e;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #0056b3;
+    }
+
+    .dashboard-img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .resume-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1rem;
+      margin-top: 2rem;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .social-icons img {
+      width: 30px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SALONI BHARAT PATIL</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#dashboards">Dashboards</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello!</h2>
+    <h2>I'm Saloni Patil.</h2>
+    <p>I'm glad you're visiting my portfolio</p>
+  </section>
+
+  <section id="about">
+    <img src="Saloni Patil.jpg" alt="Saloni Patil" class="about-img">
+    <h2>About Me</h2>
+    <p>
+      I'm on an exciting journey into the world of data analysis, and I believe learning should be a shared, enjoyable experience. I'm someone who embraces challenges — I’ve often taken on projects with zero prior knowledge and successfully delivered results beyond expectations. I thrive in uncertainty because the unknown drives my curiosity and growth.
+      <br><br>
+      My expertise lies in SQL, Python, and Power BI, and I find joy in transforming complex data into actionable insights that support business decisions. Let's connect, collaborate, and explore the endless possibilities that data has to offer!
+    </p>
+  </section>
+
+  <section id="projects" style="background: linear-gradient(to bottom, #6e6e6e, #5a5a5a); color: white;">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Sales Analysis Project</h3>
+        <p>Analyzing sales data for business insights and trends.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Superstore Data Analysis</h3>
+        <p>Insightful analysis using SQL and Power BI to uncover trends and performance.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="dashboards">
+    <h2>Data Visualization</h2>
+    <div class="dashboards">
+      <div class="card">
+        <img src="dashboard1.jpg" alt="Superstore Dashboard" class="dashboard-img">
+        <h3 style="color: #00bfff">Superstore Dashboard</h3>
+        <p>Superstore Data Analysis using Power BI.</p>
+      </div>
+      <div class="card">
+        <img src="dashboard2.jpg" alt="Sales Dashboard" class="dashboard-img">
+        <h3 style="color: #00bfff">Sales Dashboard</h3>
+        <p>Loan and Deposit Analysis using Power BI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" style="background: #e9e9e9; line-height: 2;">
+    <h2>Resume</h2>
+    <p>Download my resume to learn more about my experience and skills.</p>
+    <a class="resume-btn" href="resume.pdf" target="_blank">Download Resume</a>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <div class="social-icons">
+      <a href="mailto:patilsalonib@gmail.com"><img src="gmail-icon.png" alt="Gmail"></a>
+      <a href="https://linkedin.com/in/saloni-patil-155327147" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="https://github.com/Sal-Patil" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+    </div>
+    <p>© 2025 Saloni Patil. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
